@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形头像属性-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageViewByXfermode">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <!--登录输入框属性-->
+    <attr name="icon" format="reference"/>
+    <attr name="width" format="dimension"/>
+    <attr name="height" format="dimension"/>
+    <attr name="padding" format="dimension"/>
+    <declare-styleable name="LoginEditText">
+        <attr name="icon"/>
+        <attr name="width"/>
+        <attr name="height"/>
+        <attr name="padding"/>
+    </declare-styleable>
+
+    <!--气泡文本框-->
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension"/>
+        <attr name="angle" format="dimension"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowPosition" format="dimension"/>
+        <attr name="bubbleColor" format="color"/>
+        <attr name="arrowCenter" format="boolean"/>
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00"/>
+            <enum name="right" value="0x01"/>
+            <enum name="top" value="0x02"/>
+            <enum name="bottom" value="0x03"/>
+        </attr>
+    </declare-styleable>
+</resources>

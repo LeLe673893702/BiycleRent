@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="uncompleted_color">#e6e6e6</color>
+    <color name="uncompleted_text_color">#F8F8F8</color>
+    <color name="completed_line">#2bd246</color>
+</resources>

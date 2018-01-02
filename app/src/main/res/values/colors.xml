@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="action_bar">#CE0000</color>
+    <color name="user_center_action_bar">#9FDDC8</color>
+    <color name="completed_line">#2bd246</color>
+    <color name="undo_line">#e6e6e6</color>
+    <color name="user_info_text">#D94600</color>
+    <color name="login_back_color">#2f4159</color>
+    <color name="gray">	#d0d0d0</color>
+    <color name="foregift_button">#FF0000</color>
+    <color name="cycling_text">#fd5441</color>
+</resources>

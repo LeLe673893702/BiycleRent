@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    defaultConfig {
+        applicationId "com.bicyclerent.biyclerent"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(':stepview')
+    compile files('libs/MobCommons-2016.1201.1839.jar')
+    compile files('libs/MobTools-2016.1201.1839.jar')
+    compile name: 'SMSSDK-2.1.3', ext: 'aar'
+    compile files('libs/fastjson-1.2.6.jar')
+    compile files('libs/rxjava-1.1.0.jar.jar')
+    compile files('libs/rxandroid-0.24.0.jar')
+    compile project(':libzxing')
+    compile files('libs/AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_4.0.0_AMapLocation_3.3.0_20170118.jar')
+}
+
+
+
+

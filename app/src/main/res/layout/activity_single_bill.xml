@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bicyclerent.feixingbike.activity.SingleBillActivity">
+    <com.bicyclerent.feixingbike.view.CyclingTextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="21分钟"
+        android:textColor="@color/cycling_text"
+        android:id="@+id/single_bill_cycling_time"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <!--节约碳排量-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/greenery"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/greenery"
+                android:text="节约碳排量"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/greenery"
+                android:text="2000g"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/single_bill_tan"
+                android:layout_marginLeft="70dp"/>
+
+        </RelativeLayout>
+
+        <!--消耗卡路里-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/flame"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/flame"
+                android:paddingTop="3dp"
+                android:text="消耗卡路里"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/flame"
+                android:text="2000k"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:id="@+id/single_bill_kai"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="70dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/undo_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/single_bill_info_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

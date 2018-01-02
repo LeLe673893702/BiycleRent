@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--背景图片-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/register_background_image"/>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="FeiXingBike"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!--用户名edit-->
+        <com.bicyclerent.feixingbike.view.LoginEditText
+            xmlns:login="http://schemas.android.com/apk/res/com.bicyclerent.biyclerent"
+            android:layout_width="@dimen/login_width"
+            android:layout_height="@dimen/login_height"
+            android:hint="手机号"
+            login:width="7.5dp"
+            login:height="7.5dp"
+            login:padding="5dp"
+            android:id="@+id/register_user_edit"
+            android:textColor="@color/white"
+            android:background="@drawable/login_edit_text"
+            login:icon="@drawable/login_user"
+            android:textColorHint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="150dp"/>
+
+        <!--密码Edit-->
+        <com.bicyclerent.feixingbike.view.LoginEditText
+            xmlns:login="http://schemas.android.com/apk/res/com.bicyclerent.biyclerent"
+            android:layout_width="@dimen/login_width"
+            android:layout_height="@dimen/login_height"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:hint="密码"
+            android:inputType="textPassword"
+            login:width="7.5dp"
+            login:height="7.5dp"
+            login:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/login_edit_text"
+            login:icon="@drawable/login_password"
+            android:textColorHint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/register_password_edit"
+            android:layout_below="@+id/register_user_edit"/>
+
+        <!--验证码-->
+        <LinearLayout
+            android:layout_width="@dimen/login_width"
+            android:layout_below="@+id/register_password_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/register_code_layout"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/login_height">
+
+            <com.bicyclerent.feixingbike.view.LoginEditText
+                xmlns:login="http://schemas.android.com/apk/res/com.bicyclerent.biyclerent"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/login_height"
+                android:hint="验证码"
+                login:width="7.5dp"
+                login:height="7.5dp"
+                login:padding="5dp"
+                android:id="@+id/register_code_edit"
+                android:textColor="@color/white"
+                android:background="@drawable/login_edit_text"
+                login:icon="@drawable/register_code"
+                android:textColorHint="@color/white"
+                android:paddingLeft="20dp"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="@dimen/login_height"
+                android:background="@drawable/login_edit_text"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/register_get_code_button"
+                android:text="获取验证码"/>
+
+        </LinearLayout>
+
+        <!--注册button-->
+        <Button
+            android:layout_width="@dimen/login_width"
+            android:layout_height="@dimen/login_height"
+            android:text="确定"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/register_code_layout"
+            android:id="@+id/register_sure_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/register_button"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/menu"
+        android:id="@+id/menu_image"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/action_bar"
+        android:text="FeiBike  非行单车"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/message"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/message_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

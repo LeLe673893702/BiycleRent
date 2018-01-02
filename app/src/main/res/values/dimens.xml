@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--显示用户骑行信息-->
+    <dimen name="user_cycling_info_details">25sp</dimen>
+    <dimen name="user_cycling_info_name">15sp</dimen>
+
+    <dimen name="login_width">300dp</dimen>
+    <dimen name="login_height">40dp</dimen>
+
+</resources>

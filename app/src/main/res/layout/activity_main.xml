@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+     <com.amap.api.maps.MapView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/bicycle_rent_view"
+         >
+     </com.amap.api.maps.MapView>
+
+    <ImageButton
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/map_location"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/location_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="立即用车"
+        android:textColor="@color/white"
+        android:id="@+id/rent_bike_button"
+        android:textSize="18sp"
+        android:background="@drawable/bicycle_rent_button"/>
+
+    <ImageButton
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/customer_service"
+        android:layout_marginRight="10dp"
+        android:id="@+id/customer_service_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
